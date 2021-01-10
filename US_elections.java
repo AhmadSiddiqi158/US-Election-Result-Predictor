@@ -11,7 +11,7 @@ public class US_elections {
 	 * @param votes_Biden
 	 * @param votes_Trump
 	 * @param votes_Undecided
-	 * @return minimum votes required for Biden to win the election.
+	 * @return minimum votes required for Biden to win the election or -1 if there is no chance of Biden to win.
 	 */
 	public static int solution(int num_states, int[] delegates, int[] votes_Biden, int[] votes_Trump, int[] votes_Undecided){
 
@@ -254,7 +254,7 @@ public class US_elections {
 	 * @param votes_Trump
 	 * @param votes_Undecided
 	 * @param totalDelegates
-	 * @return minimum votes required for Biden to win the US election 
+	 * @return minimum votes required for Biden to win the US election or -1 if there is no chance of Biden to win. 
 	 */
 	public static int solutionByVotes(int num_states, int[] delegates, int[] votes_Biden, int[] votes_Trump, int[] votes_Undecided, int totalDelegates){
 
@@ -359,7 +359,7 @@ public class US_elections {
 	 * in regards to the delegates per state.
 	 * @param list1
 	 * @param list2
-	 * @return sorted list of states by Descending Ratio
+	 * @return sorted list of states by Descending Ratio 
 	 */
 	private static ArrayList<LinkedList<Double>> mergeByDecendingRatios(ArrayList<LinkedList<Double>> list1, ArrayList<LinkedList<Double>> list2){
 		ArrayList<LinkedList<Double>> list= new ArrayList<LinkedList<Double>>();
@@ -420,7 +420,7 @@ public class US_elections {
 	 * @param votes_Trump
 	 * @param votes_Undecided
 	 * @param totalDelegates
-	 * @return minimum votes required for Biden to win the US election.
+	 * @return minimum votes required for Biden to win the US election or -1 if there is no chance of Biden to win.
 	 */
 	public static int solutionByRatio(int num_states, int[] delegates, int[] votes_Biden, int[] votes_Trump, int[] votes_Undecided, int totalDelegates){
 
